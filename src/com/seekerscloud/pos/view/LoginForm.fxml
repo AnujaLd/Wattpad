@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LoginFormContext" prefHeight="581.0" prefWidth="1028.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekerscloud.pos.controller.LoginFormController">
+   <children>
+      <AnchorPane prefHeight="581.0" prefWidth="514.0" style="-fx-background-color: C4DBF5;">
+         <children>
+            <AnchorPane layoutX="89.0" layoutY="91.0" prefHeight="414.0" prefWidth="425.0" style="-fx-background-color: #F5F5F5;">
+               <children>
+                  <ImageView fitHeight="96.0" fitWidth="234.0" layoutX="113.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="153.0" layoutY="100.0" prefHeight="26.0" prefWidth="127.0" text="WelCome Back">
+                     <font>
+                        <Font name="Bodoni MT" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="119.0" layoutY="154.0" prefHeight="25.0" prefWidth="208.0" promptText="UserName" />
+                  <JFXButton buttonType="RAISED" layoutX="118.0" layoutY="257.0" onAction="#loginOnAction" prefHeight="31.0" prefWidth="218.0" style="-fx-background-color: #2980b9;" text="Login" textFill="#ebcece">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <Separator layoutX="121.0" layoutY="309.0" prefHeight="0.0" prefWidth="95.0" />
+                  <Separator layoutX="243.0" layoutY="308.0" prefHeight="3.0" prefWidth="95.0" />
+                  <Label layoutX="220.0" layoutY="300.0" text="OR" />
+                  <JFXButton buttonType="RAISED" layoutX="119.0" layoutY="324.0" onAction="#createAnAccountOnAction" prefHeight="31.0" prefWidth="218.0" style="-fx-background-color: #2c3e50;" text="Create An Account" textFill="#ebcece">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXPasswordField fx:id="txtPassword" layoutX="121.0" layoutY="204.0" prefHeight="25.0" prefWidth="208.0" promptText="Password" />
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="514.0" prefHeight="581.0" prefWidth="514.0" style="-fx-background-color: #1D1E6B;">
+         <children>
+            <AnchorPane layoutY="91.0" prefHeight="414.0" prefWidth="425.0" style="-fx-background-color: #DDE9F5;">
+               <children>
+                  <ImageView fitHeight="380.0" fitWidth="455.0" layoutX="-3.0" layoutY="34.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../asserts/login-bg.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="324.0" layoutY="14.0" text="New Update Is Avialable">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="12.0" prefHeight="57.0" prefWidth="406.0" text="It is a long established fact that a reader will be distracted by " />
+                  <JFXButton buttonType="RAISED" layoutX="341.0" layoutY="57.0" prefHeight="38.0" prefWidth="102.0" style="-fx-border-color: #0984e3; -fx-border-width: 3; -fx-border-radius: 10;" text="Upgrade" textFill="#0228a4">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
